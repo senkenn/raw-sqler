@@ -1,43 +1,10 @@
 {
-	"name": "raw-sqler",
-	"version": "0.0.0",
-	"engines": {
-		"pnpm": "please_use_npm_instead",
-		"npm": ">=9.3.1",
-		"yarn": "please_use_npm_instead",
-		"node": ">=18",
-		"vscode": "^1.85.2"
-	},
-	"publisher": "SENKEN",
-	"displayName": "Raw SQLer",
-	"description": "",
-	"categories": ["Other"],
-	"activationEvents": ["onStartupFinished"],
-	"main": "./out/extension.js",
-	"contributes": {},
-	"scripts": {
-		"vscode:prepublish": "npm run package",
-		"compile": "node esbuild.config.mjs",
-		"watch": "npm run compile",
-		"package": "npm run compile",
-		"test": "rm -rf ./out && tsc -p . && node ./out/test/runTest.js",
-		"check": "npm biome check --apply ."
-	},
+	"workspaces": [
+		"vsce"
+	],
 	"devDependencies": {
-		"@biomejs/biome": "^1.4.1",
-		"@types/jest": "^29.5.11",
-		"@types/lodash": "^4.14.202",
-		"@types/node": "^18.0.0",
-		"@types/vscode": "^1.84.0",
-		"@vscode/test-electron": "^2.3.8",
-		"cspell": "^8.0.0",
-		"esbuild": "^0.20.0",
-		"jest": "^29.7.0",
-		"lefthook": "^1.5.3",
-		"lodash": "^4.17.21",
-		"ts-jest": "^29.1.2",
-		"ts-loader": "^9.5.1",
-		"ts-node": "^10.9.2",
-		"typescript": "^5.2.2"
+		"@biomejs/biome": "^1.5.3",
+		"cspell": "^8.4.0",
+		"lefthook": "^1.6.1"
 	}
 }

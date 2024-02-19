@@ -24,5 +24,6 @@
 	"github-actions.workflows.pinned.workflows": [".github/workflows/ci.yaml"],
 	"github-actions.workflows.pinned.refresh.interval": 3,
 	"github-actions.workflows.pinned.refresh.enabled": true,
-	"python.testing.autoTestDiscoverOnSaveEnabled": false
+	"python.testing.autoTestDiscoverOnSaveEnabled": false,
+	"rust-analyzer.linkedProjects": ["./core/Cargo.toml"]
 }
