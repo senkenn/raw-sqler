@@ -10,7 +10,7 @@ export function activate(context: vscode.ExtensionContext) {
 	console.log('Congratulations, your extension "raw-sqler" is now active!');
 
 	import("../core").then((module) => {
-		module.add(1, 2);
+		console.log(module.add(1, 2));
 	});
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
