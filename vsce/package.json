@@ -11,12 +11,8 @@
 	"publisher": "SENKEN",
 	"displayName": "Raw SQLer",
 	"description": "",
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onStartupFinished"
-	],
+	"categories": ["Other"],
+	"activationEvents": ["onStartupFinished"],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
@@ -31,7 +27,7 @@
 		"compile": "webpack",
 		"watch": "npm run compile",
 		"package": "npm run compile",
-		"test": "rm -rf ./out && tsc -p . && node ./out/test/runTest.js",
+		"test": "npm run compile && node ./out/test/runTest.js",
 		"check": "npm biome check --apply ."
 	},
 	"devDependencies": {
