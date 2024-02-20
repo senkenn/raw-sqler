@@ -1,7 +1,8 @@
 {
-	"workspaces": [
-		"vsce"
-	],
+	"workspaces": ["vsce"],
+	"scripts": {
+		"core:build": "wasm-pack build core --out-dir ../vsce/core --release"
+	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.5.3",
 		"cspell": "^8.4.0",
