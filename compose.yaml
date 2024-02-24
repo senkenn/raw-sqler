@@ -1,0 +1,24 @@
+services:
+  rust:
+    container_name: rust
+    build:
+      context: ./docker
+      args:
+        - CONTAINER_USER=vscode
+    tty: true
+    volumes:
+      - .:/workspace
+    environment:
+      - CONTAINER_USER=vscode
+
+  postgres:
+    container_name: postgres
+    image: postgres:16.2
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./docker/postgres/init:/docker-entrypoint-initdb.d
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    restart: always
