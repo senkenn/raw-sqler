@@ -32,7 +32,7 @@ jobs:
           chmod +x ~/.docker/cli-plugins/docker-compose
 
       - name: Build Rust code
-        run: docker compose up -d
+        run: docker compose up rust
 
       - name: Install Node.js
         uses: actions/setup-node@v4
