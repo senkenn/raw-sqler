@@ -27,7 +27,7 @@
 		"compile": "webpack",
 		"watch": "npm run compile",
 		"package": "npm run compile",
-		"test": "npm run compile && node ./out/test/runTest.js",
+		"test": "npm run compile && tsc -p src/test && node ./out/test/runTest.js",
 		"check": "npm biome check --apply ."
 	},
 	"devDependencies": {

@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "../../out/test",
+    "skipLibCheck": true
+  },
+  "references": [
+    {
+      "path": "../../tsconfig.json"
+    }
+  ]
+}
