@@ -4,8 +4,4 @@ coverage
 *.vsix
 .vscode-test
 .cspellcache
-
-
-# Added by cargo
-
-/core/target
+tsconfig.tsbuildinfo

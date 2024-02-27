@@ -13,7 +13,6 @@
 				"--disable-extensions", // add
 				"--extensionDevelopmentPath=${workspaceFolder}/vsce"
 			],
-			"outFiles": ["${workspaceFolder}/vsce/out/**/*.js"],
 			"preLaunchTask": "${defaultBuildTask}"
 		}
 	]
